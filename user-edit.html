@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>.gm-err-container{height:100%;width:100%;display:table;background-color:#e0e0e0;position:relative;left:0;top:0}.gm-err-content{border-radius:1px;padding-top:0;padding-left:10%;padding-right:10%;position:static;vertical-align:middle;display:table-cell}.gm-err-content a{color:#4285f4}.gm-err-icon{text-align:center}.gm-err-title{margin:5px;margin-bottom:20px;color:#616161;font-family:Roboto,Arial,sans-serif;text-align:center;font-size:24px}.gm-err-message{margin:5px;color:#757575;font-family:Roboto,Arial,sans-serif;text-align:center;font-size:12px}.gm-err-autocomplete{padding-left:20px;background-repeat:no-repeat;background-size:15px 15px}</style>
+    <style>.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style>
+    <style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}</style>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
+    <style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}</style>
+    <style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}</style>
+    <style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style>
+    <style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}</style>
+    <style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>Codex</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="assets/css/leaflet/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/leaflet/leaflet.draw.css" type="text/css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <!-- Page plugins -->
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <style type="text/css">/* Chart.js */
+      @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
+    </style>
+    <style type="text/css">/* Chart.js */
+      @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
+    </style>
+    <style type="text/css">/* Chart.js */
+      @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
+    </style>
+    <style type="text/css">@-webkit-keyframes _gm8304 {
+      0% { -webkit-transform: translate3d(0px,-500px,0); -webkit-animation-timing-function: ease-in; }
+      50% { -webkit-transform: translate3d(0px,0px,0); -webkit-animation-timing-function: ease-out; }
+      75% { -webkit-transform: translate3d(0px,-20px,0); -webkit-animation-timing-function: ease-in; }
+      100% { -webkit-transform: translate3d(0px,0px,0); -webkit-animation-timing-function: ease-out; }
+      }
+    </style>
+  </head>
+  <body class="g-sidenav-show g-sidenav-pinned">
+    <!-- Main content -->
+    <div class="main-content" id="panel">
+      <!-- Topnav -->
+      <nav class="navbar navbar-top navbar-expand navbar-dark bg-dark border-bottom">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Search form -->
+            <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+              <div class="form-group mb-0">
+                <div class="input-group-merge">
+                  <h2 class="text-white">Survey Micro Demand</h2>
+                </div>
+              </div>
+              <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+              <span aria-hidden="true">×</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Header -->
+      <div class="header bg-dark pb-6">
+        <div class="container-fluid">
+          <div class="header-body">
+            <!-- Card stats -->
+            <div class="row">
+              <div class="col-md-12">
+              </div>
+              <div class="col-md-12">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page content -->
+      <div class="container-fluid mt--6">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title text-uppercase text-muted mb-0">Edit User</h5>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <form action="" method="post">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control" type="text" name="fullname" required placeholder="Name" value="Surveyor name 2"/>
+                        <span class="Error"></span>
+                      </div>
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" type="email" name="email" required placeholder="Email" value="surveyor2@gmail.com"/>
+                        <span class="Error"></span>
+                      </div>
+                      <div class="form-group">
+                        <label>Witel</label>
+                        <select class="form-control padding-right-15" placeholder="Witel">
+                          <option disabled>Witel</option>
+                          <option selected>Witel 2</option>
+                          <option>Witel 3</option>
+                          <option>Witel 4</option>
+                        </select>
+                        <span class="Error"></span>
+                      </div>
+                      <div class="form-group">
+                        <label>Gender:</label><br/>
+                        <label><input type="radio" name="gender" required value="Male" checked /> Male</label><br/>
+                        <label><input type="radio" name="gender" required value="Female" /> Female</label>
+                        <span class="Error"></span>
+                      </div>
+                      <div class="form-group text-center">
+                        <button class="btn btn-primary btn-block">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <div class="form-group text-center">
+                      <label>Picture</label><br/>
+                      <div class="preview">
+                        <img class="preview-img" src="https://www.wabashamn.org/wp-content/uploads/2014-Topiary-Display-21.jpg" alt="Preview Image" width="200" height="200"/>
+                        <div class="browse-button">
+                          <i class="fa fa-pencil-alt"></i>
+                          <input class="browse-input" type="file" required name="UploadedFile" id="UploadedFile"/>
+                        </div>
+                        <span class="Error"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer pt-0">
+          <div class="row align-items-center justify-content-lg-between">
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Argon Scripts -->
+    <!-- Core -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+    <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+    <script src="assets/js/leaflet/leaflet.js"></script>
+    <script src="assets/js/leaflet/leaflet.draw.js"></script>
+    <!-- Optional JS -->
+    <!-- Argon JS -->
+    <script src="assets/js/main.js"></script>
+    <div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+    <div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+    <div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+  </body>
+</html>
